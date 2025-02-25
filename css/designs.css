@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 /*
    ----- TEAM ESTONIA -----
     designs.css of the restaurant website.
@@ -17,43 +18,113 @@
    =============================================
 */
 
-html{
-    background-color: rgb(234, 247, 215);
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8e1;
 }
 
-body > header{
+header,footer {
+    background-color: #f8b400;
     text-align: center;
-
+    padding: 1rem;
 }
 
-
-/* horizontal navigation styles*/
-
-nav.horizontal {
-    align-items: center;
-	height: auto;
-}
-
-nav.horizontal ul {
-	text-align: center;
-}
-
-nav.horizontal li { 
-    display: inline;
-	font-size: 1.4em;
-	line-height: 2em;
-	list-style-type: none;	
-	width: 100%;
-    padding: 20px 20px 20px 20px;
-}
-
-
-/* Body Footer Styles */
-
-body > footer {
+header h1 a {
+    text-decoration: none;
     color: white;
-    background-color: rgb(51, 51, 51);
+    font-family: 'Etna', sans-serif;
+}
+
+
+
+/* Navigation styles*/
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    background-color: #ff7043;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Fredoka', sans-serif;
+}
+
+
+/* Main content of the document*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 2rem;
+}
+
+section {
+    background-color: #fff3e0;
+    padding: 2rem;
+    border-radius: 15px;
     text-align: center;
-    line-height: 2em;
+    width: 80%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+img.placeholder {
     width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.fun-element {
+    background-color: #ff760e;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 3s ease-in-out infinite alternate;
+    font-family: 'Etna', sans-serif;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+/* Footer styles */
+
+footer p {
+    margin: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
