@@ -19,7 +19,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/designs.css">
     <link rel="stylesheet" href="css/layout.css">
-    <link href="https://fonts.googleapis.com/css2?family=Etna&family=Roboto:wght@500&family=Fredoka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Etna&family=Roboto:wght@500&family=Fredoka&display=swap"
+        rel="stylesheet">
 
 
 </head>
@@ -41,7 +42,32 @@
         </ul>
     </nav>
 
-    <h1>This is the contact us page.</h1>
+    <h1 class="page-title">Contact Us</h1>
+
+    <main>
+        <form id="" action="#" method="post">
+
+            <label for="nameBox" class="required">Name </label><br>
+            <input type="text" id="nameBox" name="name" placeholder="NAME" required><br><br>
+
+            <label for="emailBox" class="required">Email </label><br>
+            <input type="email" id="emailBox" name="email" placeholder="EMAIL" required><br><br>
+
+            <label for="phoneBox">Phone </label><br>
+            <input type="tel" id="phoneBox" name="phone"
+                pattern="((\+[0-9]{2})|0)[.\- ]?9[0-9]{2}[.\- ]?[0-9]{3}[.\- ]?[0-9]{4}" placeholder="PHONE NUMBER"><br><br>
+
+            <label for="commentBox" class="required">Message</label><br>
+            <textarea id="commentBox" name="comment" rows="4" cols="20" placeholder="YOUR MESSAGE"
+                required></textarea><br>
+
+            <div class="submitButton">
+                <input type="submit" value="SEND">
+            </div>
+            
+
+        </form>
+    </main>
 
     <footer>
         <p>&copy; 2024 Chef Janno's. All Rights Reserved.</p>
