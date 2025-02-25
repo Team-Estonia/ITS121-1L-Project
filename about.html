@@ -11,17 +11,96 @@
         Giron, Danika
         Macabebe, Steven John
         Mendoza, Natalia Sabina
+    -->
 
-         -->
-
-    <title>Chef Janno's</title>
+    <title>Chef Janno's | About Us</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/designs.css">
     <link rel="stylesheet" href="css/layout.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Etna&family=Roboto:wght@500&family=Fredoka&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8e1;
+        }
+        header, footer {
+            background-color: #f8b400;
+            text-align: center;
+            padding: 1rem;
+        }
+        header h1 a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Etna', sans-serif;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            background-color: #ff7043;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Fredoka', sans-serif;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            padding: 2rem;
+        }
+        section {
+            background-color: #fff3e0;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            width: 80%;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-family: 'Roboto', sans-serif;
+        }
+        section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        img.placeholder {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        .fun-element {
+            background-color: #ff760e;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 3s ease-in-out infinite alternate;
+            font-family: 'Etna', sans-serif;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0.5; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        footer p {
+            margin: 0;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,22 +108,44 @@
         <h1><a href="index.html">Chef Janno's</a></h1>
     </header>
 
-
-
     <nav class="horizontal">
         <ul>
-           <li><a href="menu.html">Menu</a></li>
-           <li><a href="hourslocation.html">Hours & Location</a></li>
-           <li><a href="about.html">About</a></li>
-           <li><a href="gallery.html">Gallery</a></li>
-           <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="hourslocation.html">Hours & Location</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
         </ul>
-     </nav>
+    </nav>
 
-    <h1>This is the about us page.</h1>
-    
+    <main>
+        <div class="fun-element">Welcome!</div>
+        <section class="about-intro">
+            <h2>About Us</h2>
+            <img src="https://via.placeholder.com/800x300" alt="Restaurant Image" class="placeholder">
+            <p>Founded in 2010, Chef Janno's has been dedicated to bringing delicious and high-quality meals to our community. Our mission is to create memorable dining experiences by combining fresh ingredients, expert cooking, and a warm, inviting atmosphere.</p>
+        </section>
+
+        <section class="about-values">
+            <h3>Our Values</h3>
+            <img src="https://via.placeholder.com/800x300" alt="Values Image" class="placeholder">
+            <p>We are committed to quality, freshness, and customer satisfaction. Every dish is prepared with care, using the finest ingredients to ensure a delightful dining experience. We value our customers and strive to exceed their expectations every time they visit.</p>
+        </section>
+
+        <section class="about-team">
+            <h3>Meet the Team</h3>
+            <img src="https://via.placeholder.com/800x300" alt="Team Image" class="placeholder">
+            <p>Our passionate team of chefs, servers, and managers work together to bring you the best dining experience. From our talented head chef to our friendly front-of-house staff, everyone at Chef Janno's shares a love for great food and excellent service.</p>
+        </section>
+
+        <section class="about-vision">
+            <h3>Our Vision</h3>
+            <img src="https://via.placeholder.com/800x300" alt="Vision Image" class="placeholder">
+            <p>We envision becoming a beloved community hub where friends and families gather to enjoy great food and create lasting memories. Our commitment to sustainability and community engagement drives us to continually improve and innovate.</p>
+        </section>
+    </main>
+
     <footer>
-        This is a footer.
+        <p>&copy; 2024 Chef Janno's. All Rights Reserved.</p>
     </footer>
 </body>
 
