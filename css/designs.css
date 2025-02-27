@@ -18,6 +18,7 @@
    =============================================
 */
 
+
 body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
@@ -32,14 +33,19 @@ footer {
     padding: 1rem;
 }
 
+footer p {
+    margin: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
 h1.page-title,p.page-information {
     text-align: center;
 }
 
-header h1 a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Etna', sans-serif;
+img.logo{
+    max-width: 200px;
+    height: auto;
 }
 
 
@@ -50,12 +56,12 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 0;
+    padding: 10px;
     background-color: #ff7043;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
@@ -125,6 +131,30 @@ img.placeholder {
     }
 }
 
+/* Gallery */
+
+div.gallery {
+    display: grid;
+    margin:auto;
+    gap: 30px;
+    width: 60%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 30px;
+}
+
+img.galleryimage {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img.galleryimage:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+
+
 
 /*Contact us page*/
 
@@ -163,10 +193,6 @@ input[type="tel"]:focus {
     background-color: #f8b400;
 }
 
-input[type="email"]:invalid,
-input[type="tel"]:invalid {
-    background-color: #ffc1ba;
-}
 
 select{
     display: block;
@@ -219,10 +245,3 @@ input[type=submit]:hover {
 }
 
 
-/* Footer styles */
-
-footer p {
-    margin: 0;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-}

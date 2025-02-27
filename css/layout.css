@@ -30,6 +30,16 @@
 */
 @media only screen and (max-width: 480px){
    
+   img.logo{
+      max-width: 100px;
+      height: auto;
+   }
+
+   /* Gallery */
+   div.gallery {
+      grid-template-columns: 1fr;
+  }
+
 }
 
 
@@ -37,11 +47,37 @@
 
 
 /* ===================================================
-	Tablet and Desktop Devices: Greater than 480 pixels
+	Tablet Devices: Greater than 769 pixels
    ===================================================
 */
-@media only screen and (min-width: 481px){
+@media only screen and (min-width: 480px){
+
+   img.logo{
+      max-width: 150px;
+      height: auto;
+   }
+
+   /* Gallery */
+   div.gallery {
+      grid-template-columns: 1fr 1fr;
+  }
 
 }
+
+
+
+/* ===================================================
+	Desktop Devices: Greater than 769 pixels
+   ===================================================
+*/
+@media only screen and (min-width: 769px){
+
+   /* Gallery */
+   div.gallery {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+
 
 
