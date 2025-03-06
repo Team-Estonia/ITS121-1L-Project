@@ -18,22 +18,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/designs.css">
     <link rel="stylesheet" href="css/layout.css">
-    <link href="https://fonts.googleapis.com/css2?family=Etna&family=Roboto:wght@500&family=Fredoka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Etna&family=Roboto:wght@500&family=Fredoka&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img class="logo" src="images/chefjannoslogo-transparent.png" alt="Chef Janno's Logo"/></a>
+        <div class="logo">
+            <a href="index.html"><img class="logo" src="images/chefjannoslogo-transparent.png"
+                    alt="Chef Janno's Logo" /></a>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
     </header>
 
-    <nav class="horizontal">
+    <nav class="nav-bar">
         <ul>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="hourslocation.html">Hours & Location</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="hourslocation.html" class="active">Hours & Location</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contactus.html" class="active">Contact Us</a></li>
         </ul>
     </nav>
 
@@ -42,25 +51,33 @@
         <section class="about-intro">
             <h2>About Us</h2>
             <img src="https://via.placeholder.com/800x300" alt="Restaurant Image" class="placeholder">
-            <p>Founded in 2010, Chef Janno's has been dedicated to bringing delicious and high-quality meals to our community. Our mission is to create memorable dining experiences by combining fresh ingredients, expert cooking, and a warm, inviting atmosphere.</p>
+            <p>Founded in 2010, Chef Janno's has been dedicated to bringing delicious and high-quality meals to our
+                community. Our mission is to create memorable dining experiences by combining fresh ingredients, expert
+                cooking, and a warm, inviting atmosphere.</p>
         </section>
 
         <section class="about-values">
             <h3>Our Values</h3>
             <img src="https://via.placeholder.com/800x300" alt="Values Image" class="placeholder">
-            <p>We are committed to quality, freshness, and customer satisfaction. Every dish is prepared with care, using the finest ingredients to ensure a delightful dining experience. We value our customers and strive to exceed their expectations every time they visit.</p>
+            <p>We are committed to quality, freshness, and customer satisfaction. Every dish is prepared with care,
+                using the finest ingredients to ensure a delightful dining experience. We value our customers and strive
+                to exceed their expectations every time they visit.</p>
         </section>
 
         <section class="about-team">
             <h3>Meet the Team</h3>
             <img src="https://via.placeholder.com/800x300" alt="Team Image" class="placeholder">
-            <p>Our passionate team of chefs, servers, and managers work together to bring you the best dining experience. From our talented head chef to our friendly front-of-house staff, everyone at Chef Janno's shares a love for great food and excellent service.</p>
+            <p>Our passionate team of chefs, servers, and managers work together to bring you the best dining
+                experience. From our talented head chef to our friendly front-of-house staff, everyone at Chef Janno's
+                shares a love for great food and excellent service.</p>
         </section>
 
         <section class="about-vision">
             <h3>Our Vision</h3>
             <img src="https://via.placeholder.com/800x300" alt="Vision Image" class="placeholder">
-            <p>We envision becoming a beloved community hub where friends and families gather to enjoy great food and create lasting memories. Our commitment to sustainability and community engagement drives us to continually improve and innovate.</p>
+            <p>We envision becoming a beloved community hub where friends and families gather to enjoy great food and
+                create lasting memories. Our commitment to sustainability and community engagement drives us to
+                continually improve and innovate.</p>
         </section>
     </main>
 
@@ -68,5 +85,13 @@
         <p>&copy; 2024 Chef Janno's. All Rights Reserved.</p>
     </footer>
 </body>
+
+<script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function () {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
 
 </html>

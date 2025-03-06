@@ -15,7 +15,7 @@
 
 /* Import Basic Design Styles Used on All Screens */
 
-@import url("gp_designs.css");
+@import url("css/designs.css");
 
 
 
@@ -35,6 +35,66 @@
       height: auto;
    }
 
+   /* Menu*/
+
+   header{
+      display: flex;
+      justify-content: space-between;
+      vertical-align: middle;
+   }
+
+   .hamburger{
+      display: block;
+      align-self: center;
+      padding: 30px;
+      cursor: pointer;
+   }
+
+   .hamburger .line{
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 6px 0;
+   }
+
+   .nav-bar{
+      height: 0;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      background: #ff7043;
+      transition: 0.5s;
+      overflow: hidden;
+   }
+
+   .nav-bar.active{
+      height: 200px;
+   }
+
+   .nav-bar ul{
+      display: block;
+      align-self: center;
+      width: fit-content;
+      margin: 0 auto 0 auto;
+      text-align: center;
+      transition: 0.5s;
+      opacity: 0;
+   }
+
+   .nav-bar ul{
+      opacity: 1;
+   }
+
+   .nav-bar ul li {
+      margin: 10px;
+   }
+
+   .nav-bar ul li a{
+      margin-bottom: 12px;
+   }
+
    /* Gallery */
    div.gallery {
       grid-template-columns: 1fr;
@@ -50,11 +110,71 @@
 	Tablet Devices: Greater than 769 pixels
    ===================================================
 */
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 480px) and (max-width: 769px){
 
    img.logo{
       max-width: 150px;
       height: auto;
+   }
+
+   /* Menu*/
+
+   header{
+      display: flex;
+      justify-content: space-between;
+      vertical-align: middle;
+   }
+
+   .hamburger{
+      display: block;
+      align-self: center;
+      padding: 30px;
+      cursor: pointer;
+   }
+
+   .hamburger .line{
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 6px 0;
+   }
+
+   .nav-bar{
+      height: 0;
+      position: absolute;
+      top: 150px;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      background: #ff7043;
+      transition: 0.5s;
+      overflow: hidden;
+   }
+
+   .nav-bar.active{
+      height: 200px;
+   }
+
+   .nav-bar ul{
+      display: block;
+      align-self: center;
+      width: fit-content;
+      margin: 0 auto 0 auto;
+      text-align: center;
+      transition: 0.5s;
+      opacity: 0;
+   }
+
+   .nav-bar ul{
+      opacity: 1;
+   }
+
+   .nav-bar ul li {
+      margin: 10px;
+   }
+
+   .nav-bar ul li a{
+      margin-bottom: 12px;
    }
 
    /* Gallery */
@@ -71,6 +191,10 @@
    ===================================================
 */
 @media only screen and (min-width: 769px){
+   img.logo{
+      max-width: 210px;
+      height: auto;
+   }
 
    /* Gallery */
    div.gallery {

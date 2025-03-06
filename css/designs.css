@@ -26,7 +26,11 @@ body {
     background-color: #fff8e1;
 }
 
-header,
+header{
+    background-color: #f8b400;
+    text-align: center;
+    padding: 0;
+}
 footer {
     background-color: #f8b400;
     text-align: center;
@@ -44,8 +48,12 @@ h1.page-title,p.page-information {
 }
 
 img.logo{
-    max-width: 200px;
+    max-width: 210px;
     height: auto;
+}
+
+.hamburger{
+    display:none;
 }
 
 
@@ -63,6 +71,7 @@ nav ul {
 
 nav ul li {
     margin: 0 20px;
+    text-align: center;
 }
 
 nav ul li a {
@@ -70,7 +79,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     font-family: 'Fredoka', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.2rem;
 }
 
 
