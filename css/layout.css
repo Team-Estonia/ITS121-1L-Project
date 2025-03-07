@@ -28,9 +28,9 @@
 	Mobile Devices: 0 - 480 pixels
    ============================================
 */
-@media only screen and (max-width: 480px){
-   
-   img.logo{
+@media only screen and (max-width: 480px) {
+
+   img.logo {
       max-width: 90px;
       padding: 5px;
       height: auto;
@@ -38,43 +38,43 @@
 
    /* Menu*/
 
-   header{
+   header {
       display: flex;
       justify-content: space-between;
       vertical-align: middle;
    }
 
-   .hamburger{
+   .hamburger {
       display: block;
       align-self: center;
       padding: 30px;
       cursor: pointer;
    }
 
-   .hamburger .line{
+   .hamburger .line {
       width: 30px;
       height: 3px;
       background: white;
       margin: 6px 0;
    }
 
-   .nav-bar{
+   .nav-bar {
       height: 0;
       position: absolute;
-      top: 100px;
+      top: 110px;
       left: 0;
       right: 0;
-      width: 100vw;
+      width: auto;
       background: #ff7043;
       transition: 0.5s;
       overflow: hidden;
    }
 
-   .nav-bar.active{
+   .nav-bar.active {
       height: 200px;
    }
 
-   .nav-bar ul{
+   .nav-bar ul {
       display: block;
       align-self: center;
       width: fit-content;
@@ -84,7 +84,7 @@
       opacity: 0;
    }
 
-   .nav-bar ul{
+   .nav-bar ul {
       opacity: 1;
    }
 
@@ -92,14 +92,20 @@
       margin: 10px;
    }
 
-   .nav-bar ul li a{
+   .nav-bar ul li a {
       margin-bottom: 12px;
    }
 
    /* Gallery */
    div.gallery {
       grid-template-columns: 1fr;
-  }
+   }
+
+   /* Contact Us */
+   div.form-container {
+      width: 80%;
+   }
+
 
 }
 
@@ -111,9 +117,9 @@
 	Tablet Devices: Greater than 769 pixels
    ===================================================
 */
-@media only screen and (min-width: 480px) and (max-width: 769px){
+@media only screen and (min-width: 480px) and (max-width: 769px) {
 
-   img.logo{
+   img.logo {
       max-width: 120px;
       padding: 5px;
       height: auto;
@@ -121,43 +127,43 @@
 
    /* Menu*/
 
-   header{
+   header {
       display: flex;
       justify-content: space-between;
       vertical-align: middle;
    }
 
-   .hamburger{
+   .hamburger {
       display: block;
       align-self: center;
       padding: 30px;
       cursor: pointer;
    }
 
-   .hamburger .line{
+   .hamburger .line {
       width: 30px;
       height: 3px;
       background: white;
       margin: 6px 0;
    }
 
-   .nav-bar{
+   .nav-bar {
       height: 0;
       position: absolute;
-      top: 130px;
+      top: 140px;
       left: 0;
       right: 0;
-      width: 100vw;
+      width: auto;
       background: #ff7043;
       transition: 0.5s;
       overflow: hidden;
    }
 
-   .nav-bar.active{
+   .nav-bar.active {
       height: 200px;
    }
 
-   .nav-bar ul{
+   .nav-bar ul {
       display: block;
       align-self: center;
       width: fit-content;
@@ -167,7 +173,7 @@
       opacity: 0;
    }
 
-   .nav-bar ul{
+   .nav-bar ul {
       opacity: 1;
    }
 
@@ -175,14 +181,19 @@
       margin: 10px;
    }
 
-   .nav-bar ul li a{
+   .nav-bar ul li a {
       margin-bottom: 12px;
    }
 
    /* Gallery */
    div.gallery {
       grid-template-columns: 1fr 1fr;
-  }
+   }
+
+   /* Contact Us */
+   div.form-container {
+      width: 80%;
+   }
 
 }
 
@@ -192,8 +203,8 @@
 	Desktop Devices: Greater than 769 pixels
    ===================================================
 */
-@media only screen and (min-width: 769px){
-   img.logo{
+@media only screen and (min-width: 769px) {
+   img.logo {
       max-width: 140px;
       padding: 5px;
       height: auto;
@@ -202,9 +213,6 @@
    /* Gallery */
    div.gallery {
       grid-template-columns: 1fr 1fr 1fr;
-  }
+   }
 
 }
-
-
-

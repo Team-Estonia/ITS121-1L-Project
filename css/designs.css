@@ -44,9 +44,13 @@ footer p {
     font-family: 'Roboto', sans-serif;
 }
 
-h1.page-title,
+h1.page-title{
+    text-align: center;
+}
+
 p.page-information {
     text-align: center;
+    padding: 10px;
 }
 
 img.logo {
@@ -89,6 +93,7 @@ nav ul li a {
     font-weight: bold;
     font-family: 'Fredoka', sans-serif;
     font-size: 1.2rem;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
@@ -201,7 +206,7 @@ img.galleryimage:hover {
 }
 
 #lightbox img{
-    max-width: 30%;
+    max-width: 30vw;
     max-height: auto;
     padding: 5px;
     background-color: black;
@@ -213,10 +218,10 @@ img.galleryimage:hover {
 
 /*Contact us page*/
 
-div.container {
+div.form-container {
     margin: auto;
     margin-bottom: 20px;
-    width: 50%;
+    width: 550px;
     border-radius: 15px;
     background-color: #fff3e0;
     padding: 20px;
