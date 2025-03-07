@@ -61,7 +61,7 @@
    .nav-bar{
       height: 0;
       position: absolute;
-      top: 90px;
+      top: 100px;
       left: 0;
       right: 0;
       width: 100vw;
@@ -144,7 +144,7 @@
    .nav-bar{
       height: 0;
       position: absolute;
-      top: 120px;
+      top: 130px;
       left: 0;
       right: 0;
       width: 100vw;
@@ -194,7 +194,7 @@
 */
 @media only screen and (min-width: 769px){
    img.logo{
-      max-width: 160px;
+      max-width: 140px;
       padding: 5px;
       height: auto;
    }
