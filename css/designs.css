@@ -26,11 +26,12 @@ body {
     background-color: #fff8e1;
 }
 
-header{
+header {
     background-color: #f8b400;
     text-align: center;
     padding: 0;
 }
+
 footer {
     background-color: #f8b400;
     text-align: center;
@@ -43,22 +44,30 @@ footer p {
     font-family: 'Roboto', sans-serif;
 }
 
-h1.page-title,p.page-information {
+h1.page-title,
+p.page-information {
     text-align: center;
 }
 
-img.logo{
-    max-width: 210px;
+img.logo {
+    max-width: 160px;
+    padding: 5px;
     height: auto;
 }
 
-.hamburger{
-    display:none;
+.hamburger {
+    display: none;
 }
 
 
 
 /* Navigation styles*/
+
+.header-menu{
+    position:sticky;
+    top: 0;
+    z-index: 1;
+}
 
 nav ul {
     display: flex;
@@ -145,9 +154,9 @@ img.placeholder {
 
 div.gallery {
     display: grid;
-    margin:auto;
+    margin: auto;
     gap: 30px;
-    width: 60%;
+    width: 70%;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 30px;
 }
@@ -158,7 +167,7 @@ img.galleryimage {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-img.galleryimage:hover{
+img.galleryimage:hover {
     transform: scale(1.1);
     transition: all .5s;
 }
@@ -204,7 +213,7 @@ input[type="tel"]:focus {
 }
 
 
-select{
+select {
     display: block;
     width: 100%;
     padding: 10px 10px;
@@ -212,7 +221,7 @@ select{
     margin-bottom: 20px;
 }
 
-select:focus{
+select:focus {
     background-color: #f8b400;
 }
 
@@ -233,7 +242,7 @@ textarea:focus {
 }
 
 input[type="submit"] {
-    background-color: #f8b400;
+    background-color: #ff760e;
     border: none;
     border-radius: 5px;
     font-size: 1em;
@@ -245,13 +254,12 @@ input[type="submit"] {
 }
 
 input[type=submit]:hover {
-    background-color: #ff760e;
+    background-color: #1f528f;
+    transition: 0.5s;
     cursor: pointer;
-  }
+}
 
 .required:after {
     content: " *";
     color: red;
 }
-
-
