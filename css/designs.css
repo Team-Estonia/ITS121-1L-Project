@@ -316,3 +316,182 @@ input[type=submit]:hover {
     content: " *";
     color: red;
 }
+
+/* Homepage */
+body.homepage .page-title {
+    display: none;
+}
+
+body.homepage .welcome-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+body.homepage .left-image, 
+body.homepage .right-image {
+    flex: 1;
+    position: relative;
+    max-width: 32%;
+}
+
+body.homepage .left-image img, 
+body.homepage .right-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+}
+
+body.homepage .welcome-text {
+    flex: 1;
+    max-width: 36%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+body.homepage .welcome-text h1 {
+    color: #C02626;
+    font-size: 3.5rem;
+    margin: 0 0 15px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+body.homepage .welcome-text p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0;
+    text-align: left;
+}
+
+body.homepage .image-text {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    padding: 0 15px;
+}
+
+body.homepage .promo-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+body.homepage .promo-left, 
+body.homepage .promo-right {
+    flex: 1;
+    max-width: 49%;
+}
+
+body.homepage .promo-left img, 
+body.homepage .promo-right img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0;
+}
+
+@media (max-width: 768px) {
+    body.homepage .welcome-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    body.homepage .left-image, 
+    body.homepage .right-image,
+    body.homepage .welcome-text {
+        max-width: 100%;
+    }
+
+    body.homepage .promo-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    body.homepage .promo-left, 
+    body.homepage .promo-right {
+        max-width: 100%;
+    }
+}
+
+body.homepage .left-image img,
+body.homepage .right-image img,
+body.homepage .promo-left img,
+body.homepage .promo-right img {
+    transition: all 0.3s ease;
+}
+
+body.homepage .left-image img:hover,
+body.homepage .right-image img:hover,
+body.homepage .promo-left img:hover,
+body.homepage .promo-right img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+    cursor: pointer; 
+}
+/* Order Now Button Styling */
+.order-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.order-now-button {
+    background-color: #F7B516; 
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    font-size: 16px;
+}
+
+.order-now-button:hover {
+    background-color: #C02626; 
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 8px rgba(0,0,0,0.3);
+}
+
+.order-now-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+}
+
+
+@media (max-width: 768px) {
+    .order-button-container {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .order-now-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
