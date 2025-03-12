@@ -613,3 +613,266 @@ body.homepage .promo-right img:hover {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* hours & location page */
+.hours-location-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ff8c42;
+    background-image: url('../images/pattern-bg.png');
+    background-size: contain;
+    position: relative;
+    z-index: 0; /* Changed from 1 to 0 */
+}
+
+
+.hours-location-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 140, 66, 0.1);
+    z-index: -1; /* Changed from 0 to -1 */
+}
+
+.info-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    z-index: 0; /* Changed from 1 to 0 */
+    border: 2px solid #e74c3c;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 0; /* Changed from 1 to 0 */
+    border: 2px solid #e74c3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.map-container iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    display: block;
+}
+
+
+.visit-us {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Etna', sans-serif;
+    color: #e74c3c;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed #ff8c42;
+    position: relative;
+}
+
+.location-icon {
+    color: #e74c3c;
+    margin-right: 8px;
+    font-size: 24px;
+}
+
+
+.location-details {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff9f0;
+}
+
+.location-details i {
+    color: #e74c3c;
+    margin-right: 8px;
+}
+
+
+.hours {
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    border-radius: 8px;
+    background-color: #fff9f0;
+    border-left: 4px solid #e74c3c;
+    border-right: 4px solid #e74c3c;
+}
+
+.clock-icon {
+    color: #e74c3c;
+    font-size: 22px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.hours span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.time-span {
+    font-size: 18px !important;
+    color: #e74c3c;
+}
+
+
+.contact-info {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff9f0;
+}
+
+.contact-heading {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #e74c3c;
+}
+
+.contact-heading i {
+    margin-right: 8px;
+}
+
+
+.social-media {
+    margin-bottom: 15px;
+}
+
+.social-item {
+    margin-bottom: 8px;
+    padding-left: 25px;
+}
+
+.social-item i {
+    color: #e74c3c;
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.phone-details {
+    margin-top: 10px;
+}
+
+.contact-item {
+    margin-bottom: 8px;
+    padding-left: 25px;
+}
+
+.contact-item i {
+    color: #e74c3c;
+    margin-right: 8px;
+}
+
+
+.hl-page-title {
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin: 0;
+    font-family: 'Etna', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+
+.hl-page-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: repeating-linear-gradient(
+        45deg,
+        #ff8c42,
+        #ff8c42 10px,
+        #e74c3c 10px,
+        #e74c3c 20px
+    );
+}
+
+
+header {
+    position: relative;
+    z-index: 100; 
+}
+
+nav {
+    position: relative;
+    z-index: 100; 
+}
+
+.nav-menu, nav ul, nav ol, .main-navigation {
+    position: relative;
+    z-index: 100; 
+}
+
+nav a, .nav-link, nav li, .menu-item {
+    position: relative;
+    z-index: 100; 
+}
+
+
+.main-header {
+    position: relative;
+    z-index: 100;
+}
+
+
+body {
+    overflow-x: hidden;
+    position: relative; 
+}
+
+
+main, .main-content, .page-content, .site-content {
+    position: relative;
+    z-index: 1; 
+}
+
+
+@media (max-width: 768px) {
+    .hours-location-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .info-box, .map-container {
+        max-width: 100%;
+    }
+    
+    .visit-us {
+        font-size: 24px;
+    }
+    
+    .clock-icon {
+        font-size: 20px;
+    }
+}
