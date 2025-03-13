@@ -865,7 +865,7 @@ main, .main-content, .page-content, .site-content {
     }
     
     .info-box, .map-container {
-        max-width: 100%;
+        max-width: auto;
     }
     
     .visit-us {

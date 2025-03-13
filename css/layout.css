@@ -36,7 +36,7 @@
       height: auto;
    }
 
-   /* Menu*/
+   /* Header menu */
 
    header {
       display: flex;
@@ -106,6 +106,8 @@
    div.form-container {
       width: 80%;
    }
+
+   /* Menu*/
 
    .menu-container {
       display: flex;
@@ -211,7 +213,7 @@
       height: auto;
    }
 
-   /* Menu*/
+   /* Header menu */
 
    header {
       display: flex;
