@@ -53,6 +53,10 @@ footer p {
     font-family: 'Roboto', sans-serif;
 }
 
+footer p a{
+    color:white;
+}
+
 h1.page-title {
     font-family: "Sonorous";
     color: #c11f26;
@@ -875,4 +879,23 @@ main, .main-content, .page-content, .site-content {
     .clock-icon {
         font-size: 20px;
     }
+}
+
+/* SITEMAP */
+
+.sitemap-container {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 550px;
+    border-radius: 15px;
+    background-color: #fff3e0;
+    padding: 20px;
+}
+
+.sitemap-list-1 {
+    color: #c11f26;
+}
+
+.sitemap-list-2 {
+    color: #c11f26;
 }
