@@ -35,7 +35,7 @@ html, body {
 }
 
 header {
-    background-image: url("/images/pattern2-opacity.png");
+    background-image: url("../images/pattern2-opacity.png");
     background-repeat:no-repeat;
     background-size: 100%;
     background-color: #f8b400;
