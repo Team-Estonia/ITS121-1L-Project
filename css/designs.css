@@ -321,11 +321,12 @@ input[type=submit]:hover {
     color: red;
 }
 
-/* Homepage */
+/* Homepage Styles */
 body.homepage .page-title {
     display: none;
 }
 
+/* Welcome Section */
 body.homepage .welcome-section {
     display: flex;
     justify-content: space-between;
@@ -349,6 +350,7 @@ body.homepage .right-image img {
     object-fit: cover;
     border-radius: 0;
     display: block;
+    transition: all 0.3s ease;
 }
 
 body.homepage .welcome-text {
@@ -371,11 +373,32 @@ body.homepage .welcome-text h1 {
     letter-spacing: 2px;
 }
 
-body.homepage .welcome-text p {
+/* Standardize all paragraph fonts */
+body.homepage .welcome-text p,
+.food-delivery-section .order-info p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     font-size: 0.95rem;
     line-height: 1.4;
     margin: 0;
     text-align: left;
+}
+
+/* Separate styling for footer paragraphs */
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0;
+    text-align: center; /* This ensures footer text stays centered */
+}
+
+/* Specific overrides for the order info paragraph */
+.order-info p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-align: center;
 }
 
 body.homepage .image-text {
@@ -391,6 +414,7 @@ body.homepage .image-text {
     padding: 0 15px;
 }
 
+/* Promo Section */
 body.homepage .promo-section {
     display: flex;
     justify-content: space-between;
@@ -412,47 +436,21 @@ body.homepage .promo-right img {
     height: auto;
     display: block;
     border-radius: 0;
-}
-
-@media (max-width: 768px) {
-    body.homepage .welcome-section {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    body.homepage .left-image, 
-    body.homepage .right-image,
-    body.homepage .welcome-text {
-        max-width: 100%;
-    }
-
-    body.homepage .promo-section {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    body.homepage .promo-left, 
-    body.homepage .promo-right {
-        max-width: 100%;
-    }
-}
-
-body.homepage .left-image img,
-body.homepage .right-image img,
-body.homepage .promo-left img,
-body.homepage .promo-right img {
     transition: all 0.3s ease;
 }
 
+/* Image Hover Effects */
 body.homepage .left-image img:hover,
 body.homepage .right-image img:hover,
 body.homepage .promo-left img:hover,
-body.homepage .promo-right img:hover {
+body.homepage .promo-right img:hover,
+.food-item:hover img {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
     cursor: pointer; 
 }
-/* Order Now Button Styling */
+
+/* Order Now Button */
 .order-button-container {
     display: flex;
     justify-content: center;
@@ -487,8 +485,96 @@ body.homepage .promo-right img:hover {
     box-shadow: 0 2px 3px rgba(0,0,0,0.3);
 }
 
+/* Food Delivery Section */
+.food-delivery-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
 
+.food-item {
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* Make all images rectangular (removing clip-path) */
+.food-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.3s ease;
+    /* Removed clip-path to make images rectangular */
+}
+
+.order-info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.order-info h2 {
+    color: #c02026;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+/* Delivery Buttons */
+.delivery-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.delivery-button {
+    display: block;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.foodpanda {
+    background-color: #ffb300;
+}
+
+.grab {
+    background-color: #00b14f;
+}
+
+.delivery-button:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
+    body.homepage .welcome-section,
+    body.homepage .promo-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    body.homepage .left-image, 
+    body.homepage .right-image,
+    body.homepage .welcome-text,
+    body.homepage .promo-left, 
+    body.homepage .promo-right {
+        max-width: 100%;
+    }
+
     .order-button-container {
         margin-top: 15px;
         margin-bottom: 10px;
